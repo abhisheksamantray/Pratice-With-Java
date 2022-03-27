@@ -1,4 +1,4 @@
-//write a program to count the digits of the number
+//write a program to print the digit sum of number
 
 
 
@@ -11,15 +11,14 @@ class CountDigit
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter number");
 	int number=sc.nextInt();
-	int count=1;
-	
-	
-		for(int i=0;i<=number;i++)
+	int res=0;
+			
+		while(number>0)
 		{
-		   number/=10;
-		   count++;
+		int mod=number%10;
+		res=res+mod;
+		number/=10;
 		}
-		System.out.println("This number is "+count+" digits");
-		       
-	}
+		System.out.println("The digit sum of the number is "+res);		   		       
+	}	 
 } 
