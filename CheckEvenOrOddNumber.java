@@ -15,9 +15,6 @@ class CheckEvenOrOdd
 		}
 		else
 		  System.out.println("it is a odd number.");
-		
-	}
-
-
+	 }
 
 } 
